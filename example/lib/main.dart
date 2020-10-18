@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter/services.dart';
 import 'package:notification_shade/notification_shade.dart';
 
 void main() {
@@ -18,22 +16,18 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Notifiaction Shade'),
         ),
         body: Center(
           child: RaisedButton(
-            child: Text('Open Shade'),
+            child: Text('Do the notification shade thing'),
             onPressed: () async {
-              try {
-                NotificationShade.openNotificationShade;
-
-                await Future.delayed(Duration(seconds: 1));
-                NotificationShade.openNotificationShade;
-                await Future.delayed(Duration(seconds: 1));
-                NotificationShade.closeNotificationShade;
-              } on PlatformException {
-                print('Could not open shade');
-              }
+              // Open the notification shade.
+              NotificationShade.openNotificationShade;
+              // Wait 2 seconds.
+              await Future.delayed(Duration(seconds: 2));
+              // And close it again.
+              NotificationShade.closeNotificationShade;
             },
           ),
         ),
