@@ -1,5 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.roundedinfinity.notification_shade_example">
+
+  <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
    <application
         android:label="notification_shade_example"
         android:icon="@mipmap/ic_launcher">
