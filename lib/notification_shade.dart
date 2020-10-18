@@ -1,10 +1,8 @@
 import 'package:flutter/services.dart';
 
-
-
 ///Used to open and close the notification shade.
 ///
-///__Example__ 
+///__Example__
 ///
 ///```
 ///// Open the notification shade.
@@ -28,6 +26,7 @@ class NotificationShade {
       print('Could not open notification shade');
     }
   }
+
   ///Closes the notification shade
   ///
   ///Make sure to include `<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />` in your _manifest.xml_.

@@ -1,8 +1,8 @@
 name: notification_shade
 description: A plugin to open and close the notification shade on android.
 version: 1.0.0
-author: Rounded Infinity
 homepage: https://github.com/RoundedInfinity/notification_shade
+repository: https://github.com/RoundedInfinity/notification_shade.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
