@@ -1,15 +1,39 @@
-# notification_shade
+# Notification Shade
 
-A new flutter plugin project.
+A plug-in to open and close the notification shade on Android.
 
-## Getting Started
+## Installing
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+ First add `notification_shade` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/packages-and-plugins/using-packages)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+notification_shade: <Newest Version>
+```
 
+Then import it.
+
+```dart
+import 'package:notification_shade/notification_shade.dart';
+```
+
+Now you have to add this permission to your _AndroidManifext.xml_.
+
+```xml
+<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+```
+
+## Usage
+
+To open the notification shade
+
+```dart
+NotificationShade.openNotificationShade;
+```
+
+And to close it
+
+```dart
+NotificationShade.closeNotificationShade;
+```
+
+Have a nice day and stay hydrated.
