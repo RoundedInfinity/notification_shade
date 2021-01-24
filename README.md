@@ -4,6 +4,7 @@ A plug-in to open and close the notification shade on Android.
 
 ## Installing
 ![A test image](https://img.shields.io/github/stars/RoundedInfinity/notification_shade)
+
  First add `notification_shade` as a [dependency in your pubspec.yaml file](https://flutter.dev/docs/development/packages-and-plugins/using-packages)
 
 ```yaml
